@@ -1,0 +1,4 @@
+---
+- debug:
+    msg: "Hello World from Ansible, variable is{{':'}} '{{ my_variable }}'"
+...

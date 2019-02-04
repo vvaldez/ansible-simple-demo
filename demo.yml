@@ -1,0 +1,14 @@
+---
+- name: Demo Play
+  hosts: localhost
+  tasks:
+  - block:
+    - include_role:
+        name: demo
+      vars:
+        my_variable: "my_data"
+    tags: demo
+    when: 
+      - demo is not defined
+      - demo | default(True) | bool == True
+...
