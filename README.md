@@ -1,5 +1,11 @@
 # ansible-simple-demo
-Extremely basic playbook and role demo
+Extremely basic playbook and role demo.
+
+* The 'demo.yml' playbook contains a single play
+* This play has a task block to include the 'demo' role.
+* This block also has a tag that can be called or skipped
+* This block also has a conditional with a variable that can be used to skip
+* The role is a debug statement with a variable
 
 ## Call demo playbook
 ```
